@@ -92,91 +92,69 @@
                     <div class="col-md-10 col-lg-8 mx-auto">
                         <i class="bi bi-pencil-square"><h2 class="text-white mb-5 align-content-center">Afiliate</h2></i>
                         
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- * * SB Forms Contact Form * *-->
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- This form is pre-integrated with SB Forms.-->
-                        <!-- To make this form functional, sign up at-->
-                        <!-- https://startbootstrap.com/solution/contact-forms-->
                         <form>
-                            <!-- 2 column grid layout with text inputs for the first and last names -->
-                            <div class="row mb-4">
+                          <div class="row mb-4">
                               <div class="col">
-                                <div data-mdb-input-init class="form-outline">
-                                  <input type="text" id="form6Example1" class="form-control" />
-                                  <label class="form-label" Style="color: antiquewhite;" for="form6Example1">Nombres</label>
-                                </div>
+                                  <div data-mdb-input-init class="form-outline">
+                                      <input type="text" id="nombres" class="form-control" />
+                                      <label class="form-label" Style="color: antiquewhite;" for="nombres">Nombres</label>
+                                  </div>
                               </div>
                               <div class="col">
-                                <div data-mdb-input-init class="form-outline">
-                                  <input type="text" id="form6Example2" class="form-control" />
-                                  <label class="form-label" Style="color: antiquewhite;" for="form6Example2">Apellido</label>
-                                </div>
+                                  <div data-mdb-input-init class="form-outline">
+                                      <input type="text" id="apellido" class="form-control" />
+                                      <label class="form-label" Style="color: antiquewhite;" for="apellido">Apellido</label>
+                                  </div>
                               </div>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                <label class="form-check-label" Style="color: antiquewhite;" for="defaultCheck1">
-                                  Soltero
-                                </label>
+                          </div>
+                          <fieldset class="mb-4">
+                              <legend class="form-label" Style="color: antiquewhite;">Estado Civil</legend>
+                              <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="" id="soltero">
+                                  <label class="form-check-label" Style="color: antiquewhite;" for="soltero">Soltero</label>
                               </div>
                               <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
-                                <label class="form-check-label" Style="color: antiquewhite;" for="defaultCheck2">
-                                  Casado
-                                </label>
+                                  <input class="form-check-input" type="checkbox" value="" id="casado">
+                                  <label class="form-check-label" Style="color: antiquewhite;" for="casado">Casado</label>
                               </div>
                               <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                <label class="form-check-label" Style="color: antiquewhite;" for="defaultCheck1">
-                                  Divorciado
-                                </label>
-                              </div>                        
-                            <!-- Email input -->
-                            <div data-mdb-input-init class="form-outline mb-4">
-                              <input type="email" id="form6Example5" class="form-control" />
-                              <label class="form-label" Style="color: antiquewhite;" for="form6Example5">Email</label>
-                            </div>
-                          
-                            <!-- Number input -->
-                            <div data-mdb-input-init class="form-outline mb-4">
-                              <input type="number" id="form6Example6" class="form-control" />
-                              <label class="form-label" Style="color: antiquewhite;" for="form6Example6">Telefono</label>
-                            </div>
-                          
-                            <!-- Text input -->
-                            <div data-mdb-input-init class="form-outline mb-4">
-                                <input type="text" id="form6Example4" class="form-control" />
-                                <label class="form-label" Style="color: antiquewhite;" for="form6Example4">Direccion</label>
+                                  <input class="form-check-input" type="checkbox" value="" id="divorciado">
+                                  <label class="form-check-label" Style="color: antiquewhite;" for="divorciado">Divorciado</label>
                               </div>
-                            <!-- Message input -->
-                            <div data-mdb-input-init class="form-outline mb-4">
-                              <textarea class="form-control" id="form6Example7" rows="4"></textarea>
-                              <label class="form-label" Style="color: antiquewhite;" for="form6Example7">Information Adicional</label>
-                            </div>
-                            <div class="form-group">
-                                <label Style="color: antiquewhite;">Subir Foto Frente DNI </label>
-                                <input type="file" class="form-control-file" id="exampleFormControlFile1">
-                              </div>
-                              <div class="form-group">
-                                <label Style="color: antiquewhite;">Subir Foto Dorso DNI </label>
-                                <input type="file" class="form-control-file" id="exampleFormControlFile1">
-                              </div>
-                            <!-- Checkbox -->
-                            <div class="form-check d-flex justify-content-center mb-4">
-                              <input
-                                class="form-check-input me-2"
-                                type="checkbox"
-                                value=""
-                                id="form6Example8"
-                                
-                              />
-                              <label class="form-check-label" Style="color: antiquewhite;" for="form6Example8"> Acepto Afiliarme Al Partido La Libertad Avanza Formosa </label>
-                            </div>
-                          
-                            <!-- Submit button -->
-                            <button data-mdb-ripple-init type="button" class="btn btn-outline-secondary btn-block mb-4">Enviar afiliacion</button>
-                          </form>
+                          </fieldset>
+                          <div data-mdb-input-init class="form-outline mb-4">
+                              <input type="email" id="email" class="form-control" placeholder="Ejemplo: ejemplo@dominio.com" />
+                              <label class="form-label" Style="color: antiquewhite;" for="email">Email</label>
+                          </div>
+                          <div data-mdb-input-init class="form-outline mb-4">
+                              <input type="number" id="telefono" class="form-control" placeholder="Ejemplo: 1234567890" />
+                              <label class="form-label" Style="color: antiquewhite;" for="telefono">Teléfono</label>
+                          </div>
+                          <div data-mdb-input-init class="form-outline mb-4">
+                              <input type="text" id="direccion" class="form-control" placeholder="Ejemplo: Calle 123, Ciudad" />
+                              <label class="form-label" Style="color: antiquewhite;" for="direccion">Dirección</label>
+                          </div>
+                          <div data-mdb-input-init class="form-outline mb-4">
+                              <textarea class="form-control" id="info_adicional" rows="4" placeholder="Información Adicional"></textarea>
+                              <label class="form-label" Style="color: antiquewhite;" for="info_adicional">Información Adicional</label>
+                          </div>
+                          <div class="form-group mb-4">
+                              <label Style="color: antiquewhite;">Subir Foto Frente DNI</label>
+                              <input type="file" class="form-control-file" id="foto_frente_dni">
+                          </div>
+                          <div class="form-group mb-4">
+                              <label Style="color: antiquewhite;">Subir Foto Dorso DNI</label>
+                              <input type="file" class="form-control-file" id="foto_dorso_dni">
+                          </div>
+                          <div class="form-check d-flex justify-content-center mb-4">
+                              <input class="form-check-input me-2" type="checkbox" value="" id="acepto_afiliarme" />
+                              <label class="form-check-label" Style="color: antiquewhite;" for="acepto_afiliarme">Acepto Afiliarme Al Partido La Libertad Avanza Formosa</label>
+                          </div>
+                          <button data-mdb-ripple-init type="button" class="btn btn-outline-secondary btn-block mb-4">Enviar afiliación</button>
+                      </form>
+                      
+                      
+                      
                     </div>
                 </div>
             </div>
